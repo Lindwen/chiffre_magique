@@ -9,7 +9,7 @@ int main(void)
     int answer = 0;
     int trials = 10;
 
-    printf("Le chiffre aléatoire est %d.\n", randnum);
+    // printf("Le chiffre aléatoire est %d.\n", randnum);
 
     while (answer != randnum && trials != 0)
     {
@@ -19,13 +19,13 @@ int main(void)
         scanf("%d", &answer);
         if (answer != randnum)
         {
-            printf("Vous n'avez pas trouver le chiffre magique.\n");
+            printf("Vous n'avez pas trouvé le chiffre magique.\n");
             trials--;
         }
     }
     if (answer == randnum)
     {
-        printf("Bravo ! Vous avez trouver le chiffre magique : %d.", randnum);
+        printf("Bravo ! Vous avez trouvé le chiffre magique : %d.", randnum);
     }
     else
     {
