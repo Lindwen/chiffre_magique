@@ -20,7 +20,7 @@ int main(void)
         if (answer != randnum)
         {
             printf("Vous n'avez pas trouvé le chiffre magique.\n");
-            trials--;
+            --trials;
         }
     }
     if (answer == randnum)
